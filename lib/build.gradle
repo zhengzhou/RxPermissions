@@ -34,4 +34,6 @@ dependencies {
     testCompile rootProject.ext.mockito
 }
 
-apply from: 'install.gradle'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = rootProject.publishedGroupId

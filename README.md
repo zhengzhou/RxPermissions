@@ -1,6 +1,5 @@
 # RxPermissions
-
-[![Build Status](https://api.travis-ci.org/tbruyelle/RxPermissions.svg?branch=v0.7.0)](https://travis-ci.org/tbruyelle/RxPermissions)
+![](https://jitpack.io/v/zhengzhou/rxpermissions.svg)](https://jitpack.io/#zhengzhou/rxpermissions)
 
 This library allows the usage of RxJava with the new Android M permission model.
 
@@ -13,10 +12,13 @@ In your build.gradle :
 ```gradle
 repositories {
     jcenter() // If not already there
+    maven {
+        url "https://jitpack.io"
+    }
 }
 
 dependencies {
-    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'
+    compile 'com.github.zhengzhou.rxpermissions:rxpermissions:1.0.0'
 }
 ```
 
@@ -92,12 +94,6 @@ must be done during an initialization phase**. This may be `Activity.onCreate/on
 
 If not, and if your app is restarted during the permission request (because of a configuration
 change for instance), the user's answer will never be emitted to the subscriber.
-
-## Migration to 0.6.x
-
-Version 0.6.0 replaced the methods `request(trigger, permission...)` and `requestEach(trigger, permission...)`
-by *composables* methods `ensure(permission...)` and `ensureEach(permission...)`. Read the second
-example to see how to use them.
 
 ## Status
 
