@@ -1,5 +1,5 @@
 # RxPermissions
-![](https://jitpack.io/v/zhengzhou/rxpermissions.svg)](https://jitpack.io/#zhengzhou/rxpermissions)
+[![](https://jitpack.io/v/zhengzhou/rxpermissions.svg)](https://jitpack.io/#zhengzhou/rxpermissions)
 
 This library allows the usage of RxJava with the new Android M permission model.
 
