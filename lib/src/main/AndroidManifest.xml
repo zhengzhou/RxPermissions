@@ -9,6 +9,7 @@
             android:name="ShadowActivity"
             android:launchMode="singleTop"
             android:excludeFromRecents="true"
+            android:taskAffinity=".virtual"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             />
     </application>
